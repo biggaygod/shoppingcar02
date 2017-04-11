@@ -1,0 +1,236 @@
+@charset "utf-8";
+.check {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.title01 {
+  min-width: 1000px;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 100px;
+}
+.title01 .header {
+  display: block;
+  height: 50px;
+  width: 100px;
+  float: right;
+  margin-left: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.title01 .detail {
+  float: left;
+  width: 400px;
+}
+.shoppingbox {
+  border-bottom: 1px solid #ccc;
+  min-width: 1000px;
+  height: 200px;
+}
+.shoppingbox .header {
+  float: left;
+  margin-left: 20px;
+  width: 400px;
+  height: 198px;
+}
+.shoppingbox .header .ckbox:hover {
+  cursor: pointer;
+}
+.shoppingbox .header .ckbox {
+  border: 1px solid #000;
+  margin-left: 2px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 93px;
+  float: left;
+}
+.shoppingbox .header .showpic {
+  width: 200px;
+  float: left;
+  height: 198px;
+}
+.shoppingbox .header .showpic img {
+  width: 140px;
+  position: relative;
+  left: 50%;
+  margin-left: -70px;
+  top: 50%;
+  margin-top: -70px;
+}
+.shoppingbox .header .innerbox {
+  float: left;
+  width: 182px;
+  height: 198px;
+}
+.shoppingbox .header .pdname {
+  width: 182px;
+  height: 98px;
+  font-size: 20px;
+  line-height: 98px;
+}
+.shoppingbox .header dl {
+  font-weight: bold;
+}
+.shoppingbox .header .present {
+  width: 182px;
+  height: 20px;
+  line-height: 20px;
+}
+.shoppingbox .money {
+  width: 100px;
+  height: 198px;
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 198px;
+}
+.shoppingbox .count {
+  width: 100px;
+  height: 198px;
+  float: right;
+  margin-right: 20px;
+}
+.shoppingbox .count .countbar {
+  width: 84px;
+  height: 20px;
+  padding-left: 14px;
+  margin-top: 89px;
+}
+.shoppingbox .count input:hover {
+  cursor: pointer;
+}
+.shoppingbox .count .youhuo {
+  width: 98px;
+  margin-top: 20px;
+  text-align: center;
+}
+.shoppingbox .count .plus {
+  width: 18px;
+  float: left;
+}
+.shoppingbox .count .number01 {
+  border: 0px;
+  margin-left: 6px;
+  width: 14px;
+  padding: 0 10px;
+  line-height: 20px;
+  float: left;
+}
+.shoppingbox .count .minus {
+  width: 18px;
+  float: left;
+}
+.shoppingbox .totalmoney {
+  width: 100px;
+  height: 198px;
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 198px;
+}
+.shoppingbox .delete {
+  width: 100px;
+  height: 198px;
+  float: right;
+}
+.shoppingbox .delete .trashbin:hover {
+  cursor: pointer;
+}
+.shoppingbox .delete .trashbin {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  width: 30px;
+}
+.caculation {
+  min-width: 1000px;
+  width: 100%;
+  height: 50px;
+}
+.caculation .ckbox02 {
+  margin-left: 18px;
+  float: left;
+}
+.caculation .ckbox02 .ckall {
+  margin-left: 2px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 18px;
+  float: left;
+}
+.caculation .ckbox02 .ckall:hover {
+  cursor: pointer;
+}
+.caculation .ckbox02 .ckallbtn {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  top: 15px;
+  float: left;
+  margin-left: 20px;
+  border: 0px;
+  background-color: #fff;
+}
+.caculation .ckbox02 .clallbtn:hover {
+  cursor: pointer;
+}
+.caculation .ckbox02 .clallbtn {
+  width: 80px;
+  height: 20px;
+  position: relative;
+  top: 15px;
+  float: left;
+  margin-left: 20px;
+  border: 0px;
+  background-color: rgba(255, 100, 0, 0.5);
+}
+.caculation .pay {
+  float: right;
+  width: 140px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  border: 0px;
+  margin-right: 20px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 3px;
+}
+.caculation h2 {
+  height: 50px;
+  line-height: 48px;
+  float: right;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.caculation .totalmoney02 {
+  float: right;
+  height: 48px;
+  width: 200px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+}
+.showbox01 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+.showbox01 ul li {
+  display: block;
+  float: left;
+  height: 20px;
+  width: 40px;
+}

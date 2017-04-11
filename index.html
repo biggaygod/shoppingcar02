@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车VUE实现</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./less/shopping.css">
+</head>
+<body>
+	<div id="app">
+	<div class="title01">
+	<ul>
+		<li class="header detail">商品信息</li>
+		<li class="header">编辑</li>
+		<li class="header">总金额</li>
+		<li class="header">商品数量</li>
+		<li class="header">商品价格</li>	
+	</ul>
+	</div>
+	<ul>
+	<li v-for="item in productList">
+	<div class="shoppingbox">
+		<div class="header">
+			<div class="ckbox" v-bind:class="{'check':item.checked}" v-on:click="select(item)"></div>
+			<div class="showpic"><img v-bind:src="item.productImage" alt="图标"></div>
+			<div class="innerbox">
+			<div class="pdname">{{item.productName}}</div>
+			<dl>赠送:</dl>
+			<dt class="present" v-for="part in item.parts">{{part.partsName}}</dt>
+			</div>
+		</div>
+		<div class="delete"><img src="./img/car.jpg" alt="垃圾桶" class="trashbin" v-on:click="deletebox"></div>
+		<div class="totalmoney">{{item.productPrice*item.productCount|formatMoney}}</div>
+		<div class="count">	
+			<div class="countbar">	
+				<input type="button" class="plus" value="+" v-on:click="changeMoney(item,1)">
+				<input type="text" class="number01" v-model="item.productCount">
+				<input type="button" class="minus" value="-"
+				v-on:click="changeMoney(item,-1)">
+			</div>
+			<h4 class="youhuo">有货</h4>					
+		</div>
+		<div class="money">{{item.productPrice|formatMoney}}</div>
+	</div>
+	</li>
+	</ul>
+	<div class="caculation">
+		<div class="ckbox02">
+			<div class="ckall" v-bind:class="{'check':checkall}" @click="ckall(true)"></div>
+			<input type="button" class="ckallbtn" disabled="disabled" value="全选">
+			<input type="button" class="clallbtn" value="取消全选" v-bind:class="{'check':checkall}" @click="ckall(false)">
+		</div>
+		<input type="button" class="pay" value="结账" @click="payoff">
+		<div class="totalmoney02">{{totalP|formatMoney}}</div>
+		<h2>总金额：</h2>
+	</div>
+	<div class="showbox01 boxshow" v-bind:class="{'boxshow':delflag}">
+	<h2>确认删除吗</h2>
+	<ul>
+		<li class="showyes" >是</li>
+		<li class="showno" >否</li>
+	</ul></div>
+	</div>
+</body>
+    <script src="./js/vue.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.0.0.min.js"></script>
+    <script src="layer/layer.js"></script>
+    <script type="text/javascript" src="./js/shoppingcar02.js" charset="utf-8"></script>
+</html>

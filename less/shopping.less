@@ -1,0 +1,263 @@
+@charset"utf-8";
+@height:50px;
+@fontsize:20px;
+@margin:20px;
+@width:100px;
+@width02:400px;	
+.check{
+			background-color: rgba(0, 0, 0, 0.7)
+		}
+.title01{
+	min-width: 1000px;
+	color: #fff;
+	width: 100%;
+	height: @height;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 100px;
+	.header{
+		display: block;
+		height: @height;
+		width: @width;
+		float: right;
+		margin-left: @margin;
+		font-size: @fontsize;
+		text-align: center;
+		line-height: @height;
+	}
+	.detail{
+		float: left;
+		width: @width02;
+	}
+}
+.shoppingbox{
+	border-bottom: 1px solid #ccc;
+	min-width: 1000px;
+	@height02:200px;
+	height: @height02;
+	.header{
+		float: left;
+		margin-left: @margin;
+		width:@width02;
+		height: @height02/1-2;
+		.ckbox:hover{
+			cursor: pointer;
+		}
+		.ckbox{
+			border:1px solid #000;
+			margin-left:2px;
+			border-radius: 2px;
+			width: 14px;
+			height: 14px;
+			position: relative;
+			top:@height02/2-7;
+			float: left;
+		}
+		.showpic{
+			@width03:200px;
+			width: @width03;
+			float: left;
+			height: @height02/1-2;	
+		}
+		.showpic img{
+			width:140px;
+			position: relative;
+			left: 50%;
+			margin-left:-70px;
+			top:50%;
+			margin-top: -70px;
+		}
+		.innerbox{
+			float: left;
+			width: @width02/1-218;
+			height: @height02/1-2;
+		}
+		.pdname{
+			width: @width02/1-218;
+			height: @height02/2-2;
+			font-size: 20px;
+			line-height: @height02/2-2;
+		}
+		dl{
+			font-weight: bold;
+		}
+		.present{
+			width: @width02/1-218;
+			height:20px;
+			line-height: 20px;
+		}
+	}
+	.money{
+		width: @width;
+		height: @height02/1-2;
+		float: right;
+		margin-right: @margin;
+		font-size: 14px;
+		text-align: center;
+		line-height:@height02/1-2;
+	}
+	.count{
+		width: @width;
+		height: @height02/1-2;
+		float: right;
+		margin-right: @margin;
+		.countbar{
+			width: @width/1-16;
+			height: 20px;
+			padding-left: 14px;
+			margin-top: @height02/2-11;
+		}
+		input:hover{
+			cursor: pointer;
+		}
+		.youhuo{
+			width: @width/1-2;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.plus{	
+			width: 18px;
+			float: left;
+		}
+		.number01{
+			border: 0px;
+			margin-left: 6px;
+			width: 14px;
+			padding:0 10px;
+			line-height: 20px;
+			float: left;
+		}
+		.minus{
+			width: 18px;
+			float: left;
+		}
+	}
+	.totalmoney{
+		width: @width;
+		height: @height02/1-2;
+		float: right;
+		margin-right: @margin;
+		font-size: 14px;
+		text-align: center;
+		line-height:@height02/1-2;
+	}
+	.delete{
+		width: @width;
+		height: @height02/1-2;
+		float: right;
+		.trashbin:hover{
+			cursor: pointer;
+		}
+		.trashbin{
+			position: relative;
+			top: 50%;
+			left: 50%;
+			margin-top: -15px;
+			margin-left: -15px;
+			width: 30px;
+		}
+	}
+}
+.caculation{
+	min-width: 1000px;
+	width: 100%;
+	height: @height;
+	.ckbox02{
+		margin-left: @margin/1-2;
+		float: left;
+		.ckall{
+			margin-left:2px;
+			border-radius: 2px;
+			border: 1px solid #000;
+			width: 14px;
+			height: 14px;
+			position: relative;
+			top:@height/2-7;
+			float: left;
+		}
+		.ckall:hover{
+			cursor: pointer;
+		}
+		.ckallbtn{
+			width: 40px;
+			height: 20px;
+			position: relative;
+			top:@height/2-10;
+			float: left;
+			margin-left: @margin;
+			border: 0px;
+			background-color: #fff;
+		}
+		.clallbtn:hover{
+			cursor: pointer;
+		}
+		.clallbtn{
+			width: 80px;
+			height: 20px;
+			position: relative;
+			top:@height/2-10;
+			float: left;
+			margin-left: @margin;
+			border:0px;
+			background-color: rgba(255, 100, 0, 0.5)
+		}
+	}
+	.pay{
+		float: right;
+		width: 140px;
+		height: 40px;
+		position: relative;
+		top:@height/2-20;
+		border: 0px;
+		margin-right: @margin;	
+		font-size: 16px;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		border-radius: 3px;
+	}
+	h2{
+		height: @height;
+		line-height: @height/1-2;
+		float: right;
+		margin-right: @margin;
+		font-size: 16px;
+	}
+	.totalmoney02{
+		float: right;
+		height: @height/1-2;
+		width: 200px;
+		text-align: center;
+		line-height:@height/1-2;
+		font-size: 20px; 
+	}
+}
+.showbox01{
+	width: 400px;
+	height: 140px;
+	h2{
+		margin-top: 20px;
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	ul li{
+		display: block;
+		float: left;
+		height: 30px;
+		width:70px;
+		margin-top: 40px;
+		margin-left: 80px;
+		line-height: 30px;
+		text-align: center;
+		border: 1px solid #000;
+		border-radius: 3px;	
+	}
+	li:hover{
+		cursor: pointer;
+	}
+	.showno{
+		background-color: #ccc;
+	}
+}
+.boxshow{
+		display: none;
+	}
